@@ -53,7 +53,7 @@ BOOT_PREFIX ?= ""
 
 IMAGE_BOOT_FILES ?= "${UBOOT_SCRIPT}"
 
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPT_OUT = "rtc"
 
 EXTRA_IMAGEDEPENDS:append = " u-boot secure-odroid"
 #EXTRA_IMAGEDEPENDS:append = " ${@bb.utils.contains("DISTRO_FEATURES", "x11", " odroid-edid", " ", d)}"

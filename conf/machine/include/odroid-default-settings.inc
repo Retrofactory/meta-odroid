@@ -27,7 +27,7 @@ WKS_FILE_DEPENDS ?= " \
 
 MACHINE_FEATURES:append = " serial usbgadget usbhost ext2"
 
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPT_OUT = "rtc"
 
 IMAGE_INSTALL:append = " dosfstools mtools kernel-image kernel-modules"
 

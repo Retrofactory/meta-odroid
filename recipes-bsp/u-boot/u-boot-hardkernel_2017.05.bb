@@ -27,7 +27,6 @@ UBOOT_SUFFIX ?= "bin"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-S = "${WORKDIR}/git"
 B = "${S}"
 
 inherit uboot-boot-scr

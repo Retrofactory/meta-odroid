@@ -23,7 +23,6 @@ PV = "${LINUX_VERSION}+git${SRCPV}"
 
 KCONF_BSP_AUDIT_LEVEL = "0"
 
-S = "${WORKDIR}/git"
 B = "${S}"
 
 KBUILD_DEFCONFIG = "odroidxu4_defconfig"

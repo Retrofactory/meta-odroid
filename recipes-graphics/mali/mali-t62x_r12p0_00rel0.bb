@@ -38,7 +38,6 @@ BRANCH = "mali-t62x_r12p0_04rel0"
 SRCREV = "940c9c0f314b37a5378903983040b7b4d9d1d327"
 SRC_URI = "git://github.com/guster32/arm-mali.git;protocol=https;branch=${BRANCH}"
 
-S = "${WORKDIR}/git"
 
 do_install () {
     # Create MALI manifest
