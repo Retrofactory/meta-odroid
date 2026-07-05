@@ -35,7 +35,7 @@ KERNEL_EXTRA_FEATURES = ""
 
 TOOLCHAIN_PREFIX = "arm-linux-gnueabihf-"
 
-COMPILER = "${WORKDIR}/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/arm-linux-gnueabihf-gcc"
+COMPILER = "${UNPACKDIR}/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/arm-linux-gnueabihf-gcc"
 
 EXTRA_OECONF = ""
 EXTRA_OEMAKE = ' CROSS_COMPILE="${TOOLCHAIN_PREFIX}" \
@@ -48,7 +48,7 @@ EXTRA_OEMAKE = ' CROSS_COMPILE="${TOOLCHAIN_PREFIX}" \
 
 LINAROTOOLCHAIN = "4.9"
 
-PATH:prepend = "${WORKDIR}/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin:"
+PATH:prepend = "${UNPACKDIR}/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin:"
 
 require recipes-kernel/linux/linux-yocto.inc
 
